@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Szív gyűjtés</title>
+</head>
+<style>
+    .heart {
+        width: 70px;
+        height: 70px;
+        background-image: url('sziv.png');
+        background-size: cover;
+        position: absolute;
+        animation: floatHeart 2s infinite ease-in-out;
+    }
+</style>
+<body>
+    <div id="game-container">
+        <div id="score">Pontszám: <span id="score-value">0</span></div>
+        <div id="timer">Idő: <span id="timer-value">60</span>másodperc</div>
+        <audio id="collect-sound" src="collect.mp3"></audio>
+        <audio id="game-over-sound" src="game-over.mp3"></audio>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
