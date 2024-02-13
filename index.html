@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Szív gyűjtés</title>
 </head>
 <style>
@@ -15,6 +14,54 @@
         position: absolute;
         animation: floatHeart 2s infinite ease-in-out;
     }
+    body {
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Arial', sans-serif;
+    }
+
+    #game-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: #e8a3ab; /* Light Blue */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Az új CSS kód a rózsaszirmokhoz */
+    
+    /* Az új CSS kód a rózsaszirmokhoz */
+    .rose-petal {
+        width: 10px;
+        height: 10px;
+        background-size: cover;
+        position: absolute;
+    }
+
+
+
+
+    @keyframes floatHeart {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    #score {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    #timer {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
 </style>
 <body>
     <div id="game-container">
