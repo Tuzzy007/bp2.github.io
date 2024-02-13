@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function gameOver() {
         clearInterval(gameInterval);
-        gameContainer.innerHTML = "<h1>Game Over</h1><p>Your score: " + score + "</p>";
+        gameContainer.innerHTML = "<h1>Lejárt az idő életem. Nagyon szeretlek <3</h1><p>Pontod: " + score + "</p>";
         gameOverSound.play();
     }
 
