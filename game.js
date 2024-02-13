@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateTimer() {
         if (time > 0) {
             time--;
-            timerValue.textContent = time + "s";
+            timerValue.textContent = time;
         } else {
             gameOver();
         }
